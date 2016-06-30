@@ -1,0 +1,36 @@
+{
+  "id": "reviewer_picker",
+  "mem": 1024,
+  "cpus": 0.5,
+  "instances": 1,
+  "uris": [
+  ],
+  "container": {
+    "type": "DOCKER",
+    "docker": {
+      "image": "awsdevhmdal05:5000/test_app:{{DOCKER_IMAGE_TAG}}",
+      "network": "BRIDGE",
+      "portMappings": [
+        {
+          "containerPort": 8080,
+          "hostPort": 0,
+          "servicePort": 10010,
+          "protocol": "tcp"
+        }
+      ]
+    }
+  },
+  "labels": {
+    "HAPROXY_GROUP": "internal"
+  },
+  "healthChecks": [
+    {
+      "protocol": "HTTP",
+      "portIndex": 0,
+      "path": "/hello",
+      "gracePeriod": 5,
+      "intervalSeconds": 20,
+      "maxConsecutiveFailures": 3
+    }
+  ]
+}
