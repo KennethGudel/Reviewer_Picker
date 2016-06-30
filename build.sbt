@@ -1,6 +1,6 @@
 organization  := "com.reviewerFinder"
 
-version       := "0.1"
+version       := "0.1.0"
 
 scalaVersion  := "2.11.6"
 
@@ -16,8 +16,7 @@ libraryDependencies ++= {
     "com.typesafe.akka"   %%  "akka-http-core"          % akkaV,
     "com.typesafe.akka"   %%  "akka-http-experimental"  % akkaV,
     "com.typesafe.akka"   %%  "akka-http-spray-json-experimental" % akkaV,
-    "org.specs2"          %%  "specs2-core"             % "2.3.11" % "test",
-    "org.elasticsearch"   %   "elasticsearch"           % "2.2.0"
+    "org.specs2"          %%  "specs2-core"             % "2.3.11" % "test"
   )
 }
 
