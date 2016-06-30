@@ -11,8 +11,8 @@ WORKDIR /
 
 USER daemon
 
-ENTRYPOINT ["java", "-jar", "/opt/reviewer_picker-assembly-0.1.0.jar"]
+ENTRYPOINT ["java", "-jar", "/opt/app-code-assembly-0.1.0.jar"]
 
 EXPOSE 8080
 
-COPY target/scala-2.11/reviewer_picker-assembly-0.1.0.jar /opt/reviewer_picker-assembly-0.1.0.jar
+COPY target/scala-2.11/app-code-assembly-0.1.0.jar /opt/app-code-assembly-0.1.0.jar
