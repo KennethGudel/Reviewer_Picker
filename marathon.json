@@ -1,6 +1,6 @@
 {
   "id": "reviewer_picker",
-  "mem": 1024,
+  "mem": 512,
   "cpus": 0.5,
   "instances": 1,
   "uris": [
