@@ -12,9 +12,9 @@
       "network": "BRIDGE",
       "portMappings": [
         {
-          "containerPort": 8096,
+          "containerPort": 8097,
           "hostPort": 0,
-          "servicePort": 10096,
+          "servicePort": 10097,
           "protocol": "tcp"
         }
       ]
