@@ -8,13 +8,13 @@
   "container": {
     "type": "DOCKER",
     "docker": {
-      "image": "registry:5000/test_app:{{DOCKER_IMAGE_TAG}}",
+      "image": "dtr.cfpb.gov/hmda/test_app:{{DOCKER_IMAGE_TAG}}",
       "network": "BRIDGE",
       "portMappings": [
         {
           "containerPort": 8077,
           "hostPort": 0,
-          "servicePort": 10077,
+          "servicePort": 10033,
           "protocol": "tcp"
         }
       ]
