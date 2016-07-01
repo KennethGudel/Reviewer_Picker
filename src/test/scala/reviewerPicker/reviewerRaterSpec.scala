@@ -34,8 +34,4 @@ class reviewerRaterSpec extends PropSpec with MustMatchers with reviewerRaterUti
     flattenRatings(reviewers) mustBe List(Reviewer("banana", 0), Reviewer("egg", 1))
   }
 
-  property("must find 3-Iron") {
-    findReviewers("3-Iron") mustBe List()
-  }
-
 }
