@@ -13,6 +13,6 @@ USER daemon
 
 ENTRYPOINT ["java", "-jar", "/opt/app-code-assembly-0.1.0.jar"]
 
-EXPOSE 8094
+EXPOSE 8083
 
 COPY target/scala-2.11/app-code-assembly-0.1.0.jar /opt/app-code-assembly-0.1.0.jar
