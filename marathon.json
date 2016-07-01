@@ -8,7 +8,7 @@
   "container": {
     "type": "DOCKER",
     "docker": {
-      "image": "awsdevhmdal05:5000/test_app:{{DOCKER_IMAGE_TAG}}",
+      "image": "registry:5000/test_app:{{DOCKER_IMAGE_TAG}}",
       "network": "BRIDGE",
       "portMappings": [
         {
