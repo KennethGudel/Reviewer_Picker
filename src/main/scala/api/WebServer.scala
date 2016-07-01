@@ -17,8 +17,6 @@ import akka.http.scaladsl.model._
 
 import scala.util.{Failure, Success}
 
-
-
 object WebServer {
 
   def main(args: Array[String]) {
