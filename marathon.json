@@ -8,7 +8,7 @@
   "container": {
     "type": "DOCKER",
     "docker": {
-      "image": "dtr.cfpb.gov/hmda/test_app:{{DOCKER_IMAGE_TAG}}",
+      "image": "registry:5000/test_app:{{DOCKER_IMAGE_TAG}}",
       "network": "BRIDGE",
       "portMappings": [
         {
